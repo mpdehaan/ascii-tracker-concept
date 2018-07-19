@@ -1,0 +1,36 @@
+bpm 120
+scale C4 Major
+
+section intro
+tracks lead,drums
+bars 16
+repeat 1
+play intro1,drums1
+play intro2,drums1
+play intro3,drums1
+
+section verse
+scale C4 Minor
+tracks pads,drums
+play verse1,drums1
+play verse2,drums1
+play verse3,drums1
+
+section chorus
+tracks lead,drums
+transpose lead -12
+play chorus1,drums1
+play chorus2,drums1
+play chorus3,drums1
+
+repeat verse
+
+repeat chorus
+
+section ending
+set tracks lead,pad,drums1
+play ending1,ending1a,drums1
+play ending3,ending3a,drums1
+
+
+

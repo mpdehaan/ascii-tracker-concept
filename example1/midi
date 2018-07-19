@@ -1,0 +1,5 @@
+lead=1
+pads=2
+other=3,noscale
+drums=10,noscale,notranspose
+

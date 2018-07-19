@@ -1,0 +1,9 @@
+# the number of steps in arpeggiator definition subdivide the beat
+# more steps means a faster arp
+# here we just repeat the notes entered
+1
+0
+1
+0
+1 
+0

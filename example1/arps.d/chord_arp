@@ -1,0 +1,12 @@
+# the number of steps in arpeggiator definition subdivide the beat
+# more steps means a faster arp
+# put in a number of steps to transpose or "off" at any step
+# here we turn a given note into a major chord arp
+1
+4
+5
+0
+1
+4
+5
+0
