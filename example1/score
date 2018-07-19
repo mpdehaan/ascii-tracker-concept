@@ -1,3 +1,6 @@
+# note I'm lazy so the named patterns here don't all exist in the patterns.d directory
+# but look there for examples of pattern syntax
+
 bpm 120
 scale C4 Major
 
