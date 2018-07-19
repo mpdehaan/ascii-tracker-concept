@@ -1,18 +1,27 @@
 # note I'm lazy so the named patterns here don't all exist in the patterns.d directory
 # but look there for examples of pattern syntax
 
+# bpm can be changed any time
 bpm 120
+# so can the scale
 scale C4 Major
 
+# the section keyword both defines a new section that can be repeated but this section also is part of the score automatically
+# right where it is defined. We use the "tracks" keyword to select the midi tracks used for the play command
 section intro
 tracks lead,drums
 bars 16
 repeat 1
+# the patterns used by the play command are in the patterns.d directory
 play intro1,drums1
 play intro2,drums1
 play intro3,drums1
 
 section verse
+# using the scale keyword we can make scale changes at any time.
+# due to the way the scale is implemented the scale also specifies the base octave, which is good to have anyway
+# since the scale is used for all tracks, the transposes keyword shown later can be used to shift them up or down
+# so not everything gets played in the same octave
 scale C4 Minor
 tracks pads,drums
 play verse1,drums1
@@ -26,6 +35,7 @@ play chorus1,drums1
 play chorus2,drums1
 play chorus3,drums1
 
+# we can repeat the section easily if we want
 repeat verse
 
 repeat chorus
@@ -34,6 +44,8 @@ section ending
 set tracks lead,pad,drums1
 play ending1,ending1a,drums1
 play ending3,ending3a,drums1
+
+# the song ends when it gets to the bottom
 
 
 
